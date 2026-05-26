@@ -143,17 +143,7 @@ Interactive Power BI dashboards were created to visualize customer insights and 
 
 ---
 
-# 📑 Dashboard Pages
 
-| Dashboard             | Description                  |
-| --------------------- | ---------------------------- |
-| Customer Overview     | Overall customer statistics  |
-| Revenue Dashboard     | Sales & revenue trends       |
-| Product Analysis      | Product performance insights |
-| Customer Segmentation | Customer category analysis   |
-| Trend Dashboard       | Customer behavior trends     |
-
----
 
 # 📌 Key Business Insights
 
