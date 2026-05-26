@@ -238,31 +238,6 @@ Possible future enhancements:
 
 ---
 
-# 🖼️ Dashboard Preview
-
-## Customer Overview Dashboard
-
-```md
-![Dashboard](screenshots/dashboard1.png)
-```
-
----
-
-## Revenue Dashboard
-
-```md
-![Dashboard](screenshots/dashboard2.png)
-```
-
----
-
-## Customer Segmentation Dashboard
-
-```md
-![Dashboard](screenshots/dashboard3.png)
-```
-
----
 
 # 🎓 Learning Outcomes
 
