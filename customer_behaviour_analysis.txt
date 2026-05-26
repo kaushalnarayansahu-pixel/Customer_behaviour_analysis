@@ -1,0 +1,300 @@
+-- ============================================
+-- CUSTOMER BEHAVIOUR ANALYSIS PROJECT
+-- SQL ANALYSIS QUERIES
+-- ============================================
+
+CREATE DATABASE customer_behaviour_analysis;
+
+USE customer_behaviour_analysis;
+
+-- ============================================
+-- VIEW DATA
+-- ============================================
+
+SELECT * 
+FROM customer_data;
+
+-- ============================================
+-- TOTAL CUSTOMERS
+-- ============================================
+
+SELECT COUNT(DISTINCT Customer_ID) AS total_customers
+FROM customer_data;
+
+-- ============================================
+-- TOTAL ORDERS
+-- ============================================
+
+SELECT COUNT(Order_ID) AS total_orders
+FROM customer_data;
+
+-- ============================================
+-- TOTAL REVENUE
+-- ============================================
+
+SELECT ROUND(SUM(Sales),2) AS total_revenue
+FROM customer_data;
+
+-- ============================================
+-- AVERAGE SALES VALUE
+-- ============================================
+
+SELECT ROUND(AVG(Sales),2) AS average_sales
+FROM customer_data;
+
+-- ============================================
+-- TOP 10 CUSTOMERS BY REVENUE
+-- ============================================
+
+SELECT Customer_ID,
+ROUND(SUM(Sales),2) AS total_spending
+FROM customer_data
+GROUP BY Customer_ID
+ORDER BY total_spending DESC
+LIMIT 10;
+
+-- ============================================
+-- TOP 10 PRODUCTS BY SALES
+-- ============================================
+
+SELECT Product_Name,
+ROUND(SUM(Sales),2) AS total_sales
+FROM customer_data
+GROUP BY Product_Name
+ORDER BY total_sales DESC
+LIMIT 10;
+
+-- ============================================
+-- CATEGORY-WISE SALES
+-- ============================================
+
+SELECT Category,
+ROUND(SUM(Sales),2) AS category_sales
+FROM customer_data
+GROUP BY Category
+ORDER BY category_sales DESC;
+
+-- ============================================
+-- SUB-CATEGORY SALES
+-- ============================================
+
+SELECT Sub_Category,
+ROUND(SUM(Sales),2) AS subcategory_sales
+FROM customer_data
+GROUP BY Sub_Category
+ORDER BY subcategory_sales DESC;
+
+-- ============================================
+-- REGION-WISE SALES
+-- ============================================
+
+SELECT Region,
+ROUND(SUM(Sales),2) AS regional_sales
+FROM customer_data
+GROUP BY Region
+ORDER BY regional_sales DESC;
+
+-- ============================================
+-- STATE-WISE SALES
+-- ============================================
+
+SELECT State,
+ROUND(SUM(Sales),2) AS state_sales
+FROM customer_data
+GROUP BY State
+ORDER BY state_sales DESC;
+
+-- ============================================
+-- CITY-WISE SALES
+-- ============================================
+
+SELECT City,
+ROUND(SUM(Sales),2) AS city_sales
+FROM customer_data
+GROUP BY City
+ORDER BY city_sales DESC;
+
+-- ============================================
+-- PAYMENT MODE ANALYSIS
+-- ============================================
+
+SELECT Payment_Mode,
+COUNT(*) AS total_transactions
+FROM customer_data
+GROUP BY Payment_Mode
+ORDER BY total_transactions DESC;
+
+-- ============================================
+-- MONTHLY SALES ANALYSIS
+-- ============================================
+
+SELECT MONTH(Order_Date) AS order_month,
+ROUND(SUM(Sales),2) AS monthly_sales
+FROM customer_data
+GROUP BY order_month
+ORDER BY order_month;
+
+-- ============================================
+-- YEARLY SALES ANALYSIS
+-- ============================================
+
+SELECT YEAR(Order_Date) AS order_year,
+ROUND(SUM(Sales),2) AS yearly_sales
+FROM customer_data
+GROUP BY order_year
+ORDER BY order_year;
+
+-- ============================================
+-- PROFIT ANALYSIS
+-- ============================================
+
+SELECT ROUND(SUM(Profit),2) AS total_profit
+FROM customer_data;
+
+-- ============================================
+-- TOP PROFITABLE PRODUCTS
+-- ============================================
+
+SELECT Product_Name,
+ROUND(SUM(Profit),2) AS total_profit
+FROM customer_data
+GROUP BY Product_Name
+ORDER BY total_profit DESC
+LIMIT 10;
+
+-- ============================================
+-- LOSS-MAKING PRODUCTS
+-- ============================================
+
+SELECT Product_Name,
+ROUND(SUM(Profit),2) AS total_loss
+FROM customer_data
+GROUP BY Product_Name
+HAVING total_loss < 0
+ORDER BY total_loss;
+
+-- ============================================
+-- CUSTOMER RETENTION ANALYSIS
+-- ============================================
+
+SELECT Customer_ID,
+COUNT(Order_ID) AS total_orders
+FROM customer_data
+GROUP BY Customer_ID
+HAVING total_orders > 1
+ORDER BY total_orders DESC;
+
+-- ============================================
+-- REPEAT CUSTOMERS COUNT
+-- ============================================
+
+SELECT COUNT(*) AS repeat_customers
+FROM
+(
+SELECT Customer_ID
+FROM customer_data
+GROUP BY Customer_ID
+HAVING COUNT(Order_ID) > 1
+) AS repeat_data;
+
+-- ============================================
+-- CUSTOMER SEGMENT ANALYSIS
+-- ============================================
+
+SELECT Segment,
+ROUND(SUM(Sales),2) AS segment_sales
+FROM customer_data
+GROUP BY Segment
+ORDER BY segment_sales DESC;
+
+-- ============================================
+-- SHIPPING MODE ANALYSIS
+-- ============================================
+
+SELECT Ship_Mode,
+COUNT(*) AS total_shipments
+FROM customer_data
+GROUP BY Ship_Mode
+ORDER BY total_shipments DESC;
+
+-- ============================================
+-- DISCOUNT ANALYSIS
+-- ============================================
+
+SELECT ROUND(AVG(Discount),2) AS average_discount
+FROM customer_data;
+
+-- ============================================
+-- HIGH DISCOUNT PRODUCTS
+-- ============================================
+
+SELECT Product_Name,
+ROUND(AVG(Discount),2) AS avg_discount
+FROM customer_data
+GROUP BY Product_Name
+ORDER BY avg_discount DESC
+LIMIT 10;
+
+-- ============================================
+-- MOST ACTIVE CUSTOMERS
+-- ============================================
+
+SELECT Customer_ID,
+COUNT(Order_ID) AS order_count
+FROM customer_data
+GROUP BY Customer_ID
+ORDER BY order_count DESC
+LIMIT 10;
+
+-- ============================================
+-- DAILY SALES TREND
+-- ============================================
+
+SELECT Order_Date,
+ROUND(SUM(Sales),2) AS daily_sales
+FROM customer_data
+GROUP BY Order_Date
+ORDER BY Order_Date;
+
+-- ============================================
+-- AVERAGE PROFIT BY CATEGORY
+-- ============================================
+
+SELECT Category,
+ROUND(AVG(Profit),2) AS avg_profit
+FROM customer_data
+GROUP BY Category
+ORDER BY avg_profit DESC;
+
+-- ============================================
+-- ORDER PRIORITY ANALYSIS
+-- ============================================
+
+SELECT Order_Priority,
+COUNT(*) AS total_orders
+FROM customer_data
+GROUP BY Order_Priority
+ORDER BY total_orders DESC;
+
+-- ============================================
+-- VIEW CREATION FOR POWER BI
+-- ============================================
+
+CREATE VIEW customer_sales_summary AS
+SELECT Customer_ID,
+ROUND(SUM(Sales),2) AS total_sales,
+ROUND(SUM(Profit),2) AS total_profit,
+COUNT(Order_ID) AS total_orders
+FROM customer_data
+GROUP BY Customer_ID;
+
+-- ============================================
+-- VIEW CUSTOMER SALES SUMMARY
+-- ============================================
+
+SELECT *
+FROM customer_sales_summary;
+
+-- ============================================
+-- END OF PROJECT
+-- ============================================
