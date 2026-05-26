@@ -1,150 +1,147 @@
-📊 Customer Behaviour Analysis & Sales Intelligence Dashboard
+# 🛒 Customer Behaviour Analysis Dashboard
 
-An advanced end-to-end analytics project focused on uncovering customer purchasing behaviour, sales performance trends, profitability drivers, and retention insights using SQL and Power BI.
+An end-to-end data analytics project to analyze customer purchasing behavior, revenue trends, customer engagement, and business performance using SQL and Power BI.
 
-🚀 Business Problem
+---
 
-Modern retail businesses generate massive amounts of transactional data, but extracting meaningful insights from raw customer records is challenging.
+# 🚀 Problem Statement
 
-The business needed a centralized analytics solution to:
+Businesses generate huge amounts of customer and transaction data daily, making it difficult to:
 
-Understand customer purchasing behaviour
-Identify high-value customers and products
-Track revenue and profitability trends
-Analyze regional and category performance
-Detect customer retention opportunities
-Monitor operational KPIs in real time
-🛠️ Solution Architecture
+- Track customer purchasing behavior
+- Identify high-value customers
+- Analyze revenue trends
+- Monitor customer retention
+- Understand product performance
+- Generate actionable business insights
 
-Designed and developed a complete Business Intelligence workflow by combining:
+---
 
-🔹 SQL (MySQL)
+# 🛠️ Solution
 
-Used for:
+Built a complete analytics workflow using:
 
-Data extraction
-Aggregation queries
-KPI calculations
-Customer analytics
-Profitability analysis
-Retention analysis
-Sales trend analysis
-🔹 Power BI
+- SQL for data querying and business analysis
+- Power BI for interactive dashboard visualization
+- Jupyter Notebook for analysis workflow and data exploration
 
-Built an interactive dashboard for:
+---
 
-Executive reporting
-Visual storytelling
-KPI monitoring
-Trend visualization
-Drill-down analysis
-📂 Dataset Overview
+# 📂 Project Files
 
-The project analyzes transactional retail data containing:
+- `customer_behaviour_analysis.sql` → SQL analysis queries
+- `customer_behaviour_analysis.pbix` → Power BI dashboard
+- `DA2.ipynb` → Jupyter Notebook workflow
 
-Customer information
-Orders & sales transactions
-Product hierarchy
-Regional market data
-Shipping details
-Payment methods
-Profit & discount information
-⚙️ Advanced Analytics Performed
-👥 Customer Analytics
-Customer Lifetime Value analysis
-Repeat customer identification
-High-spending customer analysis
-Customer purchase frequency tracking
-💰 Revenue & Profit Analytics
-Total revenue monitoring
-Profitability analysis
-Average order value analysis
-Loss-making product detection
-📦 Product Intelligence
-Top-performing products
-Category & sub-category analysis
-Product-wise profit contribution
-Discount impact on profitability
-🌍 Regional Business Insights
-Region-wise sales comparison
-State and city-level analysis
-Market performance evaluation
-📈 Time Series Analysis
-Daily sales trends
-Monthly revenue tracking
-Yearly business growth analysis
-🚚 Operational Insights
-Shipping mode analysis
-Order priority distribution
-Payment mode preference analysis
-📌 Business KPIs & Metrics
-KPI	Description
-Total Revenue	Overall business sales generated
-Total Profit	Net business profitability
-Total Orders	Total completed transactions
-Total Customers	Unique customer count
-Average Order Value	Revenue generated per order
-Repeat Customers	Customers with multiple purchases
-Customer Retention Rate	Customer loyalty indicator
-Top Customer Revenue	Revenue contribution by top buyers
-Product Sales Performance	Best-selling products
-Category Contribution %	Revenue share by category
-Profit Margin Analysis	Profitability tracking
-Regional Sales Distribution	Sales contribution by regions
-Monthly Growth Rate	Month-over-month performance
-Discount Impact Analysis	Profit impact due to discounts
-📊 Dashboard Capabilities
-Executive Dashboard
-Revenue overview
-Profit overview
-KPI summary cards
-Customer Insights Dashboard
-Spending behaviour
-Repeat customer analysis
-Customer segmentation insights
-Sales Performance Dashboard
-Monthly & yearly trends
-Top products & categories
-Profit analysis
-Regional Dashboard
-State-wise sales
-City-wise performance
-Regional comparisons
-📈 Key Business Insights
-Identified high-value repeat customers contributing major revenue share
-Discovered top-performing product categories driving profitability
-Detected several loss-making products with excessive discount dependency
-Found strong sales concentration in specific regions and cities
-Analyzed customer retention through repeat order behaviour
-Evaluated operational preferences through shipping and payment trends
-🧠 Skills & Learnings
-Advanced SQL query writing
-Business KPI generation
-Data modeling & aggregation
-Customer behaviour analytics
-Profitability analysis
-Power BI dashboard development
-Data storytelling & visualization
-Real-world business intelligence workflows
-⚡ Tech Stack
-MySQL
-SQL
-Power BI
-🔗 Future Enhancements
-Real-time dashboard integration
-AI-powered customer segmentation
-Predictive churn analysis
-Sales forecasting models
-Recommendation engine for personalized marketing
-Advanced customer lifetime value prediction
-📄 SQL Analytics Queries
+---
 
-The project contains extensive SQL-based business analysis queries including:
+# ⚙️ Key Features
 
-Revenue analysis
-Customer retention analysis
-Product performance analysis
-Profitability tracking
-Sales trend analytics
-Operational KPI generation
-Dashboard-ready SQL views
+✔️ Customer Segmentation Analysis  
+✔️ Revenue Trend Analysis  
+✔️ Product Performance Tracking  
+✔️ Customer Retention Analysis  
+✔️ KPI Monitoring  
+✔️ Interactive Power BI Dashboards  
+✔️ Business Intelligence Reporting  
+
+---
+
+# 📊 Dashboard Preview
+
+## Customer Overview Dashboard
+
+![Customer Overview Dashboard](screenshots/dashboard1.png)
+
+---
+
+## Revenue Analysis Dashboard
+
+![Revenue Dashboard](screenshots/dashboard2.png)
+
+---
+
+## Customer Segmentation Dashboard
+
+![Customer Segmentation Dashboard](screenshots/dashboard3.png)
+
+---
+
+# 📈 Key Insights
+
+- High-value customers contributed major revenue share
+- Certain product categories generated higher sales
+- Repeat customers improved overall business performance
+- Revenue trends helped identify peak business periods
+- Customer engagement varied across different segments
+
+---
+
+# 🧠 Learnings
+
+- Writing SQL queries for business analysis
+- Performing customer segmentation
+- Building interactive Power BI dashboards
+- Generating KPI-based business insights
+- Transforming raw data into business intelligence reports
+- Analyzing real-world customer behavior data
+
+---
+
+# ⚡ Tech Stack
+
+- SQL
+- Power BI
+- Jupyter Notebook
+- Data Analytics
+- Business Intelligence
+
+---
+
+# 📊 KPIs Analyzed
+
+- Total Customers
+- Total Revenue
+- Customer Retention Rate
+- Average Purchase Value
+- Product Performance
+- Revenue Trends
+
+---
+
+# 🌍 Business Use Cases
+
+This project helps businesses:
+
+- Improve customer retention
+- Optimize marketing strategies
+- Understand customer purchasing patterns
+- Increase revenue
+- Support data-driven business decisions
+
+---
+
+# 🔗 Future Improvements
+
+- Real-time dashboard integration
+- Predictive customer analytics
+- Customer churn prediction
+- Product recommendation systems
+- Advanced Power BI DAX calculations
+- Machine learning integration
+
+---
+
+# 👨‍💻 Author
+
+## Kaushal Narayan Sahu
+
+🎓 B.Tech ECE Student  
+📊 Data Analytics Enthusiast  
+📈 SQL & Power BI Learner  
+
+### 🔗 Connect With Me
+
+- GitHub: https://github.com/kaushalnarayansahu-pixel
+- LinkedIn: https://www.linkedin.com/in/kaushal-narayan-sahu/
+
