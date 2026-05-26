@@ -47,25 +47,7 @@ Built a complete analytics workflow using:
 
 ---
 
-# 📊 Dashboard Preview
 
-## Customer Overview Dashboard
-
-![Customer Overview Dashboard](screenshots/dashboard1.png)
-
----
-
-## Revenue Analysis Dashboard
-
-![Revenue Dashboard](screenshots/dashboard2.png)
-
----
-
-## Customer Segmentation Dashboard
-
-![Customer Segmentation Dashboard](screenshots/dashboard3.png)
-
----
 
 # 📈 Key Insights
 
