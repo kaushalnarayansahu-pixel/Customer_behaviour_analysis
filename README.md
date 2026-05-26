@@ -1,288 +1,107 @@
-# 🛒 Customer Behaviour Analysis
+📊 Customer Behaviour Analysis Dashboard
+
+An end-to-end data analytics project to analyze customer purchasing patterns, sales performance, customer retention, and business profitability using SQL and Power BI.
+
+🚀 Problem Statement
+Businesses often struggle to understand:
+
+Customer buying behavior
+Revenue and profit trends
+High-performing products and categories
+Customer retention patterns
+Regional business performance
+
+Without proper analytics, identifying growth opportunities and improving customer experience becomes difficult.
+
+🛠️ Solution
+Built a complete analytics workflow using:
+
+SQL for data cleaning and business analysis
+Power BI for interactive dashboard visualization
+KPI-driven reporting for customer and sales insights
+
+📂 Data Sources
+
+Customer transaction dataset
+Sales and order records
+Product & category information
+Shipping and payment details
+Regional and customer segment data
+
+⚙️ Key Features
+
+Customer Behaviour Analysis
+Revenue & Profit Tracking
+Customer Retention Analysis
+Product Performance Analysis
+Regional Sales Insights
+Category & Sub-category Analysis
+Shipping & Payment Analysis
+Time-based Sales Trend Analysis
+
+📌 Key Metrics
+
+Total Customers
+Total Orders
+Total Revenue
+Total Profit
+Average Sales Value
+Repeat Customers Count
+Monthly Sales Growth
+Yearly Sales Performance
+Category-wise Revenue
+Region-wise Sales
+Top 10 Customers by Revenue
+Top 10 Products by Sales
+Average Discount %
+Order Priority Distribution
+Customer Order Frequency
+
+📊 Dashboard Highlights
+
+Interactive KPI Cards
+Customer Spending Insights
+Sales & Profit Trends
+Region-wise Performance Dashboard
+Customer Retention Tracking
+Product-wise Revenue Analysis
+Monthly & Daily Sales Trends
+Loss-making Product Identification
+
+📈 Key Insights
+
+Identified top revenue-generating customers and products
+Detected high-performing product categories
+Found loss-making products affecting profitability
+Analyzed repeat customer behavior and retention
+Evaluated regional sales contribution
+Discovered preferred payment and shipping modes
+
+🧠 Learnings
+
+Writing advanced SQL queries for analytics
+Performing customer and sales analysis
+Creating business KPIs and dashboards
+Data aggregation and reporting
+Building interactive Power BI visualizations
+Understanding real-world business intelligence workflows
+
+⚡ Tech Stack
+
+MySQL
+SQL
+Power BI
+
+🔗 Future Improvements
+
+Real-time dashboard integration
+Predictive customer churn analysis
+AI-based recommendation system
+Sales forecasting using Machine Learning
+Advanced customer segmentation
 
-<div align="center">
-
-### SQL • Power BI • Data Analytics • Business Intelligence
-
-<img src="https://img.shields.io/badge/SQL-Data%20Analysis-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Data%20Analytics-Business%20Insights-green?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Business-Intelligence-orange?style=for-the-badge" />
-
-</div>
-
----
-
-# 📌 Project Overview
-
-This project focuses on analyzing customer behavior data using SQL and Power BI to generate meaningful business insights. The project helps understand customer purchasing patterns, customer engagement, product preferences, revenue trends, and customer retention behavior.
-
-The raw dataset was analyzed using SQL queries and visualized through interactive Power BI dashboards to support data-driven business decision-making.
-
-This project simulates a real-world customer analytics environment used by e-commerce and retail companies.
-
----
-
-# 🎯 Business Requirement
-
-Businesses generate huge amounts of customer transaction and interaction data daily. Without proper analysis, companies face challenges such as:
-
-* Poor customer retention
-* Low customer engagement
-* Revenue loss
-* Ineffective marketing strategies
-* Poor product targeting
-* Limited customer insights
-
-### This project helps solve these problems by:
-
-✔️ Understanding customer purchasing behavior
-✔️ Identifying high-value customers
-✔️ Analyzing customer engagement trends
-✔️ Monitoring sales and revenue patterns
-✔️ Improving customer retention strategies
-✔️ Supporting business decision-making
-
----
-
-# 🛠️ Tools & Technologies Used
-
-| Technology       | Purpose                   |
-| ---------------- | ------------------------- |
-| SQL              | Data querying & analysis  |
-| Power BI         | Dashboard & visualization |
-| Jupyter Notebook | Data analysis workflow    |
-| GitHub           | Project hosting           |
-
----
-
-# 📂 Project Files
-
-| File Name                          | Description                        |
-| ---------------------------------- | ---------------------------------- |
-| `customerbehavioranalysis.sql`     | SQL queries for customer analysis  |
-| `customer_behaviour_analysis.pbix` | Power BI dashboard file            |
-| `DA2.ipynb`                        | Jupyter Notebook analysis workflow |
-
----
-
-# 🧠 Project Workflow
-
-```text
-Raw Customer Data
-          ↓
-     SQL Analysis
-          ↓
- Business Insights
-          ↓
- Power BI Dashboard
-          ↓
- Interactive Reporting
-```
-
----
-
-# 🗄️ SQL Analysis Performed
-
-The project uses SQL queries to analyze customer behavior and generate business insights.
-
-### SQL Concepts Used
-
-* SELECT
-* WHERE
-* GROUP BY
-* ORDER BY
-* Aggregate Functions
-* Filtering
-* Sorting
-* Customer Segmentation
-
----
-
-# 📊 Analysis Performed
-
-## 1️⃣ Customer Purchase Analysis
-
-Analyzed customer purchasing trends and transaction behavior.
-
----
-
-## 2️⃣ Revenue Analysis
-
-Calculated total sales and revenue trends.
-
----
-
-## 3️⃣ Customer Segmentation
-
-Grouped customers based on purchasing patterns and activity.
-
----
-
-## 4️⃣ Product Performance Analysis
-
-Identified top-performing products and categories.
-
----
-
-## 5️⃣ Customer Retention Analysis
-
-Analyzed repeat customers and customer engagement.
-
----
-
-## 6️⃣ Trend Analysis
-
-Studied customer behavior trends over time.
-
----
-
-# 📈 Power BI Dashboard
-
-Interactive Power BI dashboards were created to visualize customer insights and business KPIs.
-
----
-
-
-
-# 📌 Key Business Insights
-
-✅ Identified high-value customers
-✅ Analyzed customer purchasing behavior
-✅ Detected customer engagement trends
-✅ Improved understanding of sales performance
-✅ Generated actionable business insights
-✅ Supported data-driven decision-making
-
----
-
-# 📊 KPIs Analyzed
-
-| KPI                     | Description                |
-| ----------------------- | -------------------------- |
-| Total Customers         | Overall customer count     |
-| Total Revenue           | Overall business revenue   |
-| Customer Retention Rate | Repeat customer percentage |
-| Average Purchase Value  | Average customer spending  |
-| Product Performance     | Top-performing products    |
-
----
-
-# 🚀 Dashboard Features
-
-✔️ Interactive visualizations
-✔️ KPI cards
-✔️ Dynamic filtering
-✔️ Revenue trend charts
-✔️ Customer segmentation visuals
-✔️ Product performance analysis
-✔️ Trend analysis dashboards
-
----
-
-# 🧩 Skills Gained
-
-## Technical Skills
-
-* SQL Query Writing
-* Data Analysis
-* Data Visualization
-* Power BI Dashboard Development
-* Business Intelligence
-* Analytical Reporting
-
----
-
-## Analytical Skills
-
-* Customer Behavior Analysis
-* Revenue Analysis
-* KPI Analysis
-* Business Reporting
-* Trend Analysis
-* Customer Segmentation
-
----
-
-# 🌍 Real-World Applications
-
-This type of analytics project can be used by:
-
-* E-commerce Companies
-* Retail Businesses
-* Marketing Teams
-* CRM Teams
-* Business Intelligence Teams
-
-### For:
-
-* Customer retention
-* Marketing optimization
-* Product recommendations
-* Revenue forecasting
-* Customer engagement analysis
-* Business strategy planning
-
----
-
-# 🔮 Future Improvements
-
-Possible future enhancements:
-
-* Predictive customer analytics
-* Customer churn prediction
-* Recommendation systems
-* Real-time dashboards
-* Advanced Power BI DAX calculations
-* Machine learning integration
-
----
-
-
-# 🎓 Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-* Customer behavior analysis
-* SQL querying
-* Power BI dashboard creation
-* Business intelligence reporting
-* KPI monitoring
-* Data-driven decision-making
-
----
-
-# ✅ Conclusion
-
-This project demonstrates how SQL and Power BI can be used to analyze customer behavior data and generate actionable business insights.
-
-The analysis helps businesses:
-
-* Improve customer engagement
-* Increase revenue
-* Understand purchasing patterns
-* Improve customer retention
-* Support strategic business decisions
-
-This project also strengthened practical skills in:
-
-✔️ SQL
-✔️ Data Analytics
-✔️ Power BI
-✔️ Dashboard Development
-✔️ Business Intelligence
-
----
-
-<div align="center">
-
-# 👨‍💻 Author
-
-## Kaushal Narayan Sahu
-
-🎓 B.Tech ECE Student
-📊 Data Analytics Enthusiast
-📈 SQL & Power BI Learner
+📄 Project Queries & Analysis
+The project contains detailed SQL queries for customer analytics, sales analysis, profit tracking, retention analysis, and dashboard reporting.
 
 ### 🔗 Connect With Me
 
